@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001a49;    
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    color: #fff;
+    padding: var(--padding-container);
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    grid-template-rows:180px 1fr;
+
+
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../assets/computer.jpg');
+    background-size: cover;
+    clip-path: polygon(99% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+    z-index: -1;
+}
+.nav{
+    --padding-container:0;
+}
+.nav_title{
+    font-weight: 300;
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items{
+    list-style: none;
+}
+
+
+.nav__links{
+    color: #fff;
+    text-decoration: none;
+}
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+}
+.nav__img{
+    display: block;
+    width: 30px;
+}
+.nav__close{
+    display: var(--show, none);
+}
