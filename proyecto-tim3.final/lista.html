@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lista de inscritos - Tim3</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1>Tim3</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="registro.html">Registro</a>
+      <a href="lista.html">Lista inscritos</a>
+      <a href="login.html">Acceso</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2>Participantes registrados</h2>
+  <table class="tabla">
+    <thead><tr><th>Nombre</th><th>Evento</th><th>Correo</th><th>Teléfono</th></tr></thead>
+    <tbody id="tabla-body">
+      <tr><td colspan="4">Cargando...</td></tr>
+    </tbody>
+  </table>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">© Tim3</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="firebase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

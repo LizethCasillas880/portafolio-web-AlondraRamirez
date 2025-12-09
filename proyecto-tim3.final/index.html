@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Tim3 - Eventos Deportivos</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1>Tim3</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="registro.html">Registro</a>
+      <a href="lista.html">Lista inscritos</a>
+      <a href="login.html">Acceso</a>
+    </nav>
+  </div>
+</header>
+
+<main class="hero wrap">
+  <div class="hero-left">
+    <h2>Bienvenido a Tim3</h2>
+    <p>Registra tu participación en los eventos deportivos. Evitamos registros duplicados y facilitamos contacto por WhatsApp.</p>
+
+    <div class="cta-row">
+      <a class="btn" href="registro.html">Registrar ahora</a>
+      <button class="btn-outline" id="waBtn">Contactar por WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <!-- Ilustración: reemplaza por tu imagen si tienes -->
+  </div>
+</main>
+
+<section class="info wrap">
+  <h3>Problema común</h3>
+  <p>En otras plataformas el registro se duplica y se han reportado cobros automáticos múltiples. En Tim3 prevenimos duplicados verificando nombre + evento en la base de datos antes de aceptar un registro y no procesamos pagos automáticamente (opcionalmente se puede integrar pago con protección).</p>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">© Tim3 - Eventos Deportivos</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="firebase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

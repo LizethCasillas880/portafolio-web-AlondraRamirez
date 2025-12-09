@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Registro - Tim3</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1>Tim3</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="registro.html">Registro</a>
+      <a href="lista.html">Lista inscritos</a>
+      <a href="login.html">Acceso</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap form-wrap">
+  <h2>Registro al evento</h2>
+
+  <div class="card">
+    <label>Nombre completo</label>
+    <input id="nombre" placeholder="Ej. Lizeth Casillas" />
+
+    <label>Correo / Matrícula (opcional)</label>
+    <input id="correo" placeholder="correo@ejemplo.com" />
+
+    <label>Selecciona evento</label>
+    <select id="evento">
+      <option value="">-- Selecciona --</option>
+      <option value="Fútbol">Fútbol</option>
+      <option value="Basquetbol">Basquetbol</option>
+      <option value="Voleibol">Voleibol</option>
+      <option value="Natación">Natación</option>
+    </select>
+
+    <label>Teléfono (opcional)</label>
+    <input id="telefono" placeholder="10 dígitos" />
+
+    <button class="btn" onclick="registrar()">Registrar</button>
+    <p id="msg" class="msg"></p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">© Tim3</div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="firebase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
